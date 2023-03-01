@@ -1,54 +1,29 @@
-# Practical work #4 for Enterprise Systems Architecture course 
- 
-- JDK 16.0.2
-- Spring Boot 2.5.5
-- PostgreSQL 13.3
-- Intellij IDEA Ultimate 2021.2.1
+# Лабораторная работа по дисциплине "Архитектура корпоративных систем"
 
-This project is the same as [ESAPracticalWork3](https://github.com/NikitaKharitonov/ESAPracticalWork3) but
-is implemented with Spring Boot instead of Spring Framework and also has
-a logging mechanism and a “watchdog” for a specific kind of changes.
+Show groups
+![image](https://user-images.githubusercontent.com/83270014/222093687-34fcd383-1cfe-4fcd-b5c3-fd439e42a4f5.png)
 
-### Task 1
-A new table/entity was added:
+Show courses
+![image](https://user-images.githubusercontent.com/83270014/222093909-740986d9-90e5-4d17-a981-952ff4e87019.png)
 
-DbChange - represents a change of information in other tables of the database.
+Show students
+![image](https://user-images.githubusercontent.com/83270014/222094390-a8479f54-c5d4-439f-9c6f-b8dd8caee1ea.png)
 
-Its fields:
-- type - type of change, possible values: insert, update, delete;
-- entityId - the ID of the changing entity;
-- entitySimpleName - the simple name of the changing entity, possible values: Student, Group, Course;
-- oldEntityString - the string representation of the old entity (it is null, if the type of change is 'insert');
-- newEntityString - the string representation of the new entity (it is null, if the type of change is 'delete').
+Create group
+![image](https://user-images.githubusercontent.com/83270014/222094484-75d91344-d2a0-4317-bfba-6acc735470b1.png)
 
-### Task 2
-Two classes were created to handle the JMS logic: Sender and Receiver.
-Sender creates a DbChange object and sends it to Receiver. Receiver checks the DbChange object and saves it to the DB 
-and sends notification emails.
+Create course
+![image](https://user-images.githubusercontent.com/83270014/222094579-8c043f40-c0ac-4389-9ac7-a0a8693f7669.png)
 
-### Task 3
-The implemented Sender bean was added to the services to send messages whenever the DB is changed.
+Create students 
+![image](https://user-images.githubusercontent.com/83270014/222094693-5dcee57d-f2fa-42fd-8f98-7da0fbd41188.png)
 
-### Task 4
-The Receiver receives these messages and a record into the 'db_change' table.
+Update groups
+![image](https://user-images.githubusercontent.com/83270014/222094853-83d16499-bd50-467b-9529-21853aa5256c.png)
 
-### Task 5
-A new table/entity was added:
+Update course
+![image](https://user-images.githubusercontent.com/83270014/222095671-342957a2-d899-4866-a086-107fd9924e13.png)
 
-Notification - contains an email address for notification, and condition.
-
-Its fields: 
-- emailAddress - where to send the notification;
-- notificationCondition - when to send the notification.
-
-NotificationCondition is an enum each constant of which has an associated predicate. This predicate is applied to 
-the DbChange object to determine if the notification must be sent or not. 
-
-### Task 6
-The Receiver uses EmailManagerService to send emails.
-
-### Task 7
-The project runs with Spring Boot and PostgreSQL.
-
-
+Update student
+![image](https://user-images.githubusercontent.com/83270014/222095914-5c6572dc-0b5f-4e0b-9aa6-36d8b2d26d45.png)
 
