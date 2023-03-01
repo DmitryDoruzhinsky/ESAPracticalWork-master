@@ -28,24 +28,28 @@ SQL scripts:
 - delete_data - deletes all data from the tables
 
 Работа с форматом JSON:
+Courses
+- POST /api/json/courses/create — создать новый курс
+- GET /api/json/courses — получить все курсы
+- GET /api/json/courses/:id - получить один курс по id
+- PATCH /api/json/courses/:id/update - обновить один курс по id
+- DELETE /api/json/courses/:id/delete - удалить один курс по id
 
-- POST    localhost:8080/ESAPracticalWork3_war/courses/create — создать новый курс
-- GET     localhost:8080/ESAPracticalWork3_war/courses — получить все курсы
-- GET     localhost:8080/ESAPracticalWork3_war/courses/:id - получить один курс по id
-- PATCH   localhost:8080/ESAPracticalWork3_war/courses/:id/update - обновить один курс по id
-- DELETE  localhost:8080/ESAPracticalWork3_war/courses/:id/delete - удалить один курс по id
-- POST    localhost:8080/ESAPracticalWork3_war/groups/create — создать новую группу
-- GET     localhost:8080/ESAPracticalWork3_war/groups — получить все группы
-- GET     localhost:8080/ESAPracticalWork3_war/groups/:id — получить одну группу по id
-- PATCH   localhost:8080/ESAPracticalWork3_war/groups/:id/update - обновить одну группу по id
-- DELETE  localhost:8080/ESAPracticalWork3_war/groups/:id/delete - удалить одну группу по id
-- GET     localhost:8080/ESAPracticalWork3_war/groups/:id/courses — получить все курсы группы по id
-- GET     localhost:8080/ESAPracticalWork3_war/groups/:id/students — получить всех учеников группы по id
-- POST    localhost:8080/ESAPracticalWork3_war/students/create — создать нового ученика
-- GET     localhost:8080/ESAPracticalWork3_war/students — получить всех учеников
-- GET     localhost:8080/ESAPracticalWork3_war/students/:id - получить одного студента по id
-- PATCH   localhost:8080/ESAPracticalWork3_war/students/:id/update - обновить одного ученика по идентификатору
-- DELETE  localhost:8080/ESAPracticalWork3_war/students/:id/delete - удалить одного ученика по id
+Groups
+- POST /api/json/groups/create — создать новую группу
+- GET /api/json/groups — получить все группы
+- GET /api/json/groups/:id — получить одну группу по id
+- PATCH /api/json/groups/:id/update - обновить одну группу по id
+- DELETE /api/json/groups/:id/delete - удалить одну группу по id
+- GET /api/json/groups/:id/courses — получить все курсы группы по id
+- GET /api/json/groups/:id/students — получить всех учеников группы по id
+
+Students
+- POST /api/json/students/create — создать нового ученика
+- GET /api/json/students — получить всех учеников
+- GET /api/json/students/:id - получить одного студента по id
+- PATCH /api/json/students/:id/update - обновить одного ученика по идентификатору
+- DELETE /api/json/students/:id/delete - удалить одного ученика по id
 
 
 Show groups
