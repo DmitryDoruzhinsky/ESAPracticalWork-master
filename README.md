@@ -29,23 +29,23 @@ SQL scripts:
 
 Работа с форматом JSON:
 
-- POST localhost:8080/ESAPracticalWork3_war/courses/create — создать новый курс
-- GET localhost:8080/ESAPracticalWork3_war/courses — получить все курсы
-- GET localhost:8080/ESAPracticalWork3_war/courses/:id - получить один курс по id
-- PATCH localhost:8080/ESAPracticalWork3_war/courses/:id/update - обновить один курс по id
-- DELETE localhost:8080/ESAPracticalWork3_war/courses/:id/delete - удалить один курс по id
-- POST localhost:8080/ESAPracticalWork3_war/groups/create — создать новую группу
-- GET localhost:8080/ESAPracticalWork3_war/groups — получить все группы
-- GET localhost:8080/ESAPracticalWork3_war/groups/:id — получить одну группу по id
-- PATCH localhost:8080/ESAPracticalWork3_war/groups/:id/update - обновить одну группу по id
-- DELETE localhost:8080/ESAPracticalWork3_war/groups/:id/delete - удалить одну группу по id
-- GET localhost:8080/ESAPracticalWork3_war/groups/:id/courses — получить все курсы группы по id
-- GET localhost:8080/ESAPracticalWork3_war/groups/:id/students — получить всех учеников группы по id
-- POST localhost:8080/ESAPracticalWork3_war/students/create — создать нового ученика
-- GET localhost:8080/ESAPracticalWork3_war/students — получить всех учеников
-- GET localhost:8080/ESAPracticalWork3_war/students/:id - получить одного студента по id
-- PATCH localhost:8080/ESAPracticalWork3_war/students/:id/update - обновить одного ученика по идентификатору
-- DELETE localhost:8080/ESAPracticalWork3_war/students/:id/delete - удалить одного ученика по id
+- POST    localhost:8080/ESAPracticalWork3_war/courses/create — создать новый курс
+- GET     localhost:8080/ESAPracticalWork3_war/courses — получить все курсы
+- GET     localhost:8080/ESAPracticalWork3_war/courses/:id - получить один курс по id
+- PATCH   localhost:8080/ESAPracticalWork3_war/courses/:id/update - обновить один курс по id
+- DELETE  localhost:8080/ESAPracticalWork3_war/courses/:id/delete - удалить один курс по id
+- POST    localhost:8080/ESAPracticalWork3_war/groups/create — создать новую группу
+- GET     localhost:8080/ESAPracticalWork3_war/groups — получить все группы
+- GET     localhost:8080/ESAPracticalWork3_war/groups/:id — получить одну группу по id
+- PATCH   localhost:8080/ESAPracticalWork3_war/groups/:id/update - обновить одну группу по id
+- DELETE  localhost:8080/ESAPracticalWork3_war/groups/:id/delete - удалить одну группу по id
+- GET     localhost:8080/ESAPracticalWork3_war/groups/:id/courses — получить все курсы группы по id
+- GET     localhost:8080/ESAPracticalWork3_war/groups/:id/students — получить всех учеников группы по id
+- POST    localhost:8080/ESAPracticalWork3_war/students/create — создать нового ученика
+- GET     localhost:8080/ESAPracticalWork3_war/students — получить всех учеников
+- GET     localhost:8080/ESAPracticalWork3_war/students/:id - получить одного студента по id
+- PATCH   localhost:8080/ESAPracticalWork3_war/students/:id/update - обновить одного ученика по идентификатору
+- DELETE  localhost:8080/ESAPracticalWork3_war/students/:id/delete - удалить одного ученика по id
 
 
 Show groups
