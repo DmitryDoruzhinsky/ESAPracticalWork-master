@@ -1,9 +1,31 @@
 # Лабораторная работа по дисциплине "Архитектура корпоративных систем"
+В в ходе лабораторной работы было изучены такие понятия как:
+- Клиент серверное приложение;
+- HTTP request/response;
+- Apachhe Tomcat;
+- Сервлет и его жизненный цикл;
+- Redirect и Forward;
+- Cookie;
+- JDBC и SQL (SQL инъекция);
+- Spring framework;
+- IoC, DI;
+- CRUD, REST, DAO(Data Access Object);
 
 
 
+JDK 16.0.2
+Spring Framework 5.3.9
+Tomcat 9.0.52
+PostgreSQL 13.3
+Intellij IDEA Ultimate 2021.2.1
 
+Entity diagram
+![image](https://user-images.githubusercontent.com/83270014/222102539-506ef5bc-4830-44b3-820f-7961846fab97.png)
 
+SQL scripts:
+- drop_create_schema - drops the tables if they exist and then creates them
+- insert_data - inserts data to the created tables
+- delete_data - deletes all data from the tables
 
 Show groups
 ![image](https://user-images.githubusercontent.com/83270014/222093687-34fcd383-1cfe-4fcd-b5c3-fd439e42a4f5.png)
