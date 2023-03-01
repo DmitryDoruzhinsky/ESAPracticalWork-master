@@ -1,16 +1,17 @@
 # Лабораторная работа по дисциплине "Архитектура корпоративных систем"
 В ходе лабораторной работы было изучены такие понятия как:
 - Клиент серверное приложение;
-- HTTP request/response;
-- Apachhe Tomcat;
+- HTTP(HyperText Transfer Protocol), request(запрос)/response(ответ);
+- Apachhe Tomcat - открытая библиотека, которая является web сервером и контейнером сервлетов;
 - Сервлет и его жизненный цикл;
-- Redirect и Forward;
+- Redirect и Forward (способы перенаправить вользователя);
 - Cookie;
-- JDBC и SQL (SQL инъекция);
+- JDBC(Java Dtavase Connectivity), SQL(Structured Query Language), SQL инъекция);
 - Spring framework;
-- IoC, DI;
-- CRUD, REST, DAO(Data Access Object);
-
+- IoC(Inversion of control), DI(Dependency Injection);
+- CRUD (CREATE READ UPDATE DELETE), REST( Representational State Transfer), DAO(Data Access Object);
+- Maven;
+- JMS(Java Message Service);
 
 Web приложение реализованно на следующих версиях технологий и инструментов:
 - JDK 16.0.2
