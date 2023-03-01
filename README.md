@@ -1,5 +1,10 @@
 # Лабораторная работа по дисциплине "Архитектура корпоративных систем"
 
+
+
+
+
+
 Show groups
 ![image](https://user-images.githubusercontent.com/83270014/222093687-34fcd383-1cfe-4fcd-b5c3-fd439e42a4f5.png)
 
