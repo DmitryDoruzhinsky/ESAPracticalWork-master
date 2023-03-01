@@ -12,20 +12,41 @@
 - CRUD, REST, DAO(Data Access Object);
 
 
+Web приложение реализованно на следующих версиях технологий и инструментов:
+- JDK 16.0.2
+- Spring Boot 2.5.5
+- Tomcat 9.0.52
+- PostgreSQL 13.3
+- Intellij IDEA Ultimate 2021.2.1
 
-JDK 16.0.2
-Spring Framework 5.3.9
-Tomcat 9.0.52
-PostgreSQL 13.3
-Intellij IDEA Ultimate 2021.2.1
-
-Entity diagram
+Диаграммы сущностей:
 ![image](https://user-images.githubusercontent.com/83270014/222102539-506ef5bc-4830-44b3-820f-7961846fab97.png)
 
 SQL scripts:
 - drop_create_schema - drops the tables if they exist and then creates them
 - insert_data - inserts data to the created tables
 - delete_data - deletes all data from the tables
+
+Работа с форматом JSON:
+
+- POST localhost:8080/ESAPracticalWork3_war/courses/create — создать новый курс
+- GET localhost:8080/ESAPracticalWork3_war/courses — получить все курсы
+- GET localhost:8080/ESAPracticalWork3_war/courses/:id - получить один курс по id
+- PATCH localhost:8080/ESAPracticalWork3_war/courses/:id/update - обновить один курс по id
+- DELETE localhost:8080/ESAPracticalWork3_war/courses/:id/delete - удалить один курс по id
+- POST localhost:8080/ESAPracticalWork3_war/groups/create — создать новую группу
+- GET localhost:8080/ESAPracticalWork3_war/groups — получить все группы
+- GET localhost:8080/ESAPracticalWork3_war/groups/:id — получить одну группу по id
+- PATCH localhost:8080/ESAPracticalWork3_war/groups/:id/update - обновить одну группу по id
+- DELETE localhost:8080/ESAPracticalWork3_war/groups/:id/delete - удалить одну группу по id
+- GET localhost:8080/ESAPracticalWork3_war/groups/:id/courses — получить все курсы группы по id
+- GET localhost:8080/ESAPracticalWork3_war/groups/:id/students — получить всех учеников группы по id
+- POST localhost:8080/ESAPracticalWork3_war/students/create — создать нового ученика
+- GET localhost:8080/ESAPracticalWork3_war/students — получить всех учеников
+- GET localhost:8080/ESAPracticalWork3_war/students/:id - получить одного студента по id
+- PATCH localhost:8080/ESAPracticalWork3_war/students/:id/update - обновить одного ученика по идентификатору
+- DELETE localhost:8080/ESAPracticalWork3_war/students/:id/delete - удалить одного ученика по id
+
 
 Show groups
 ![image](https://user-images.githubusercontent.com/83270014/222093687-34fcd383-1cfe-4fcd-b5c3-fd439e42a4f5.png)
